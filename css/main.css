@@ -1,0 +1,176 @@
+body{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.header{
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  background-color: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.name a{
+  padding-left: 1em;
+}
+
+.header a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.links{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.links a{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  height: 40em;
+  text-align: center;
+  padding-top: 7em;
+  background-image: linear-gradient(#8e9eab, #eef2f3);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.main h1{
+  font-weight: 700;
+}
+
+.mainLinks{
+  display: inline-block;
+  width: 5em;
+  height: 2.5em;
+  background-color: lightgrey;
+  border-radius: .5em;
+  line-height: 2.5em;
+}
+
+.mainLinks a{
+  text-decoration: none;
+}
+
+.linkedin{
+  background-color: #069;
+}
+
+.linkedin a{
+  color: white;
+  font-weight: bold;
+}
+
+.github{
+  background-color: #F5F5F5;  
+}
+
+.github a{
+  color: black;
+  font-weight: bold;
+}
+
+.languages{
+  width: 100%;
+  height: 40em;
+  background-image: linear-gradient(#F1F2B5, #135058);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-weight: 700;
+}
+
+.work{
+  width: 100%;
+  background-image: linear-gradient(#24C6DC, #514A9D);
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  text-align: center;
+}
+
+.projects{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.eachProject{
+  width: 23%;
+  padding-right: 1%;
+}
+
+figure{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.contact{
+  width: 100%;
+  height: 40em;
+  background-color: #EDDCDC;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.bottomLinks{
+  width: 6em;
+  height: 2em;
+  margin-left:1em;
+  line-height: 2em;
+  text-align: center;
+}
+
+.bottomLinks a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+}
+
+font-size{
+  max-width: 100%;
+}
+
+@media screen and (max-width: 750px){
+  .name{
+    width: 25%;
+  }
+  
+  .links{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .name {
+    width: 80%;
+  }
+  
+  .links {
+    display: none;
+  }
+  
+  .eachProject {
+    width: 48%;
+  }
+}
